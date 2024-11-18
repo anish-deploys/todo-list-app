@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="app-title">To-Do List</h1>
+      <button id="toggle-dark-mode">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+      <div class="task-input">
+        <input type="text" id="new-task" placeholder="Add a new task..." />
+        <select id="priority">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button id="add-task" class="btn">Add Task</button>
+      </div>
+
+      <div class="task-search">
+        <input type="text" id="search-task" placeholder="Search tasks..." />
+        <button id="search-button" class="btn">Search</button>
+      </div>
+
+      <div class="tasks">
+        <section id="incomplete-tasks">
+          <h2>To-Do</h2>
+          <ul></ul>
+        </section>
+        <section id="completed-tasks">
+          <h2>Completed</h2>
+          <ul></ul>
+        </section>
+      </div>
+    </main>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/anish-bakshi/" target="_blank" class="icon linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/anish-deploys" target="_blank" class="icon github">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://hub.docker.com/u/anish0910" target="_blank" class="icon dockerhub">
+        <i class="fab fa-docker"></i>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
